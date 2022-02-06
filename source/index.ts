@@ -47,6 +47,9 @@ client.on("messageReactionAdd", async (ReactionEmoji) => {
       const formattedMessage = `Shared by @${message?.author?.username}\n${message.content}`;
       if (channel as TextChannel) {
         (channel as TextChannel).send(formattedMessage);
+        console.log('Message sent.');
+        console.log(formattedMessage);
+        console.log(channel);
       } else {
         console.log("Issue with curation channel");
       }
