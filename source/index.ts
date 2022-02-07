@@ -38,7 +38,7 @@ client.on("messageReactionAdd", async (ReactionEmoji) => {
       return (
         CURATE_FROM === channelId &&
         emoji.name === "🥕" &&
-        count === 1
+        count === 3
       );
     };
 
