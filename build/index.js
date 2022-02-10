@@ -61,7 +61,7 @@ client.on("messageReactionAdd", (ReactionEmoji) => __awaiter(void 0, void 0, voi
         const sendMessage = () => {
             return (CURATE_FROM === channelId &&
                 emoji.name === "🥕" &&
-                count === 1);
+                count === 3);
         };
         if (sendMessage() && POST_TO) {
             const channel = client.channels.cache.get(POST_TO);
@@ -70,7 +70,6 @@ client.on("messageReactionAdd", (ReactionEmoji) => __awaiter(void 0, void 0, voi
                 channel.send(formattedMessage);
                 console.log('Message sent.');
                 console.log(formattedMessage);
-                console.log(channel);
             }
             else {
                 console.log("Issue with curation channel");

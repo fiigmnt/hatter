@@ -49,7 +49,6 @@ client.on("messageReactionAdd", async (ReactionEmoji) => {
         (channel as TextChannel).send(formattedMessage);
         console.log('Message sent.');
         console.log(formattedMessage);
-        console.log(channel);
       } else {
         console.log("Issue with curation channel");
       }
